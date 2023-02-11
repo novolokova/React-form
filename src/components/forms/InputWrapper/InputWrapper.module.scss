@@ -1,15 +1,15 @@
-// УПОРЯДКУВАТИ
-label .valid {
-  // color: initial;
-  border-color: transparent;
+.label{
+position: relative;
 }
+
 label .invalid {
   border: 4px solid red;
   color: red;
 }
-
+// УПОРЯДКУВАТИ
   
 .input{
+  
   margin: 5px 0;
   width: 95%;
   background-color: #fff;
@@ -21,3 +21,47 @@ label .invalid {
   border-radius: 4px;
 }
 
+span.tooltip {
+  position: absolute;
+  z-index: 1;
+  left: 15px;
+  line-height: 20px;
+  padding: 10px;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  color:  #fff;
+  background:  red;
+  border: 4px solid  red;
+  border-radius: 5px;
+ 
+
+  &.tooltip:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    top: -23px;
+    left: 10px;
+  }
+
+
+
+
+
+}
+
+// span.tooltip:after {
+//   content: "";
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   border-width: 10px;
+//   border-style: solid;
+//   border-color: transparent transparent red transparent;
+//   top: -23px;
+//   left: 10px;
+// }

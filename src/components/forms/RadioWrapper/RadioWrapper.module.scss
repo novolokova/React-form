@@ -21,7 +21,6 @@
   flex-wrap: nowrap;
   line-height: 1.5em;
   text-align: left;
-
   .h3 {
     font-size: 20px;
   }
@@ -29,3 +28,39 @@
     font-size: 12px;
   }
 }
+
+span.tooltip {
+  position: absolute;
+  line-height: 20px;
+  padding: 10px;
+  font-size: 14px;
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  background: red;
+  border: 4px solid red;
+  border-radius: 5px;
+  &.tooltip:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent red transparent;
+    top: -23px;
+    left: 10px;
+  }
+}
+
+// span.tooltip:after {
+//   content: "";
+//   position: absolute;
+//   width: 0;
+//   height: 0;
+//   border-width: 10px;
+//   border-style: solid;
+//   border-color: transparent transparent red transparent;
+//   top: -23px;
+//   left: 10px;
+// }

@@ -6,7 +6,7 @@ import styles from "./InputWrapper.module.scss";
 const InputWrapper = (props) => {
   const { name, className, ...rest } = props;
   return (
-    <label >
+    <label className={styles.label}>
       <Field name={name}>
         {({ field, form, meta }) => {
           const validStyle = cx(styles.input, {
@@ -16,7 +16,9 @@ const InputWrapper = (props) => {
           return <input {...field} className={validStyle} {...rest} />;
         }}
       </Field>
-      <ErrorMessage name={name} component="span" />
+      <ErrorMessage name={name} component="span" className={styles.tooltip}/> 
+
+
     </label>
   );
 };

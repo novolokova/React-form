@@ -22,7 +22,7 @@ const RadioWrapper = (props) => {
           </label>
         </div>
       ))}
-      <ErrorMessage name={name} component="div" />
+      <ErrorMessage name={name} component="span" className={styles.tooltip}/>
     </div>
   );
 };
