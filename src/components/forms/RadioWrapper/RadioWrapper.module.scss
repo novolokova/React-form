@@ -1,0 +1,31 @@
+.fieldsContainer {
+  width: 95%;
+  margin-left: 3%;
+  .label {
+    display: flex;
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    margin: 20px 0 20px 0;
+  }
+}
+
+.radio {
+  align-self: flex-start;
+  margin-right: 15px;
+}
+
+.article {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  line-height: 1.5em;
+  text-align: left;
+
+  .h3 {
+    font-size: 20px;
+  }
+  .p {
+    font-size: 12px;
+  }
+}
