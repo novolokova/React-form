@@ -1,34 +1,19 @@
+@use "src/common/styles/colors" as color;
+@use "src/common/styles/templates" as *;
+@use "src/common/styles/borders" as border;
+
 .signupForm {
-
-  max-width: 600px;
-  width: 80%;
-  min-width: 350px;
-
-  padding: 0 1.5%;
-  margin-top: 80px;
-  margin: auto;
+  @extend .form-size;
 }
+
 .inputWrap {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
 }
 
-// УПОРЯДКУВАТИ ОДНАКОВЕ !!!
-
 .submit {
-  width: 95%;
+  @extend .submit-style;
+  width: 97%;
   margin-left: 3%;
-  border: transparent;
-  border-radius: 4px;
-
-  font-size: 18px;
-
-  padding: 1.25em;
-  color: #fff;
-  background-color: #28d2d0;
-
-  font-size: 18px;
-  font-weight: 700;
 }

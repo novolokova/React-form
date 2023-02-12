@@ -61,9 +61,7 @@ const SignUpForm = () => {
                 type="password"
                 placeholder="Password Confirm"
               />
-
               <RadioWrapper name="role" textRadioLabel={textRadioLabel} />
-
               <input
                 className={styles.submit}
                 type="submit"

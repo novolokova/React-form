@@ -16,13 +16,9 @@ const InputWrapper = (props) => {
           return <input {...field} className={validStyle} {...rest} />;
         }}
       </Field>
-      <ErrorMessage name={name} component="span" className={styles.tooltip}/> 
-
-
+      <ErrorMessage name={name} component="span" className={styles.tooltip} />
     </label>
   );
 };
 
 export default InputWrapper;
-
-

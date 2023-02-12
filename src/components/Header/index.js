@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, useLocation } from "react-router-dom";
-import styles from './Header.module.scss'
+import styles from "./Header.module.scss";
 
 const Header = () => {
   const { pathname } = useLocation();
@@ -10,13 +10,16 @@ const Header = () => {
         <img src="/logoForm.png" alt="logo squadhelp" />
       </Link>
       {pathname === "/" || pathname === "/signup" ? (
-        <Link className={styles.btn} to="/login">Login</Link>
+        <Link className={styles.btn} to="/login">
+          Login
+        </Link>
       ) : (
-        <Link className={styles.btn} to="/signup">Signup</Link>
+        <Link className={styles.btn} to="/signup">
+          Signup
+        </Link>
       )}
     </header>
   );
 };
 
 export default Header;
-

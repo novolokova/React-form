@@ -13,8 +13,10 @@ a{
   text-decoration: none;
 }
 h1{
-  font-size: 30px;
-  
+  font-size: 40px;
+}
+h2{
+  font-size: 20px;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

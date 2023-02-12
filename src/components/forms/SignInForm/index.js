@@ -18,8 +18,8 @@ const SignInForm = () => {
   };
   return (
     <Formik
-      initialValues={initialValues} //
-      onSubmit={onSubmit} //
+      initialValues={initialValues} 
+      onSubmit={onSubmit} 
       validationSchema={SIGN_IN_SCHEMA}
     >
       {(formikProps) => {

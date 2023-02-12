@@ -1,0 +1,50 @@
+@use "src/common/styles/colors" as color;
+@use "src/common/styles/borders" as border;
+
+.tooltip {
+  position: absolute;
+  z-index: 1;
+  left: 15px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 20px;
+  font-style: italic;
+  color: color.$text-color;
+  background: color.$error-color;
+  border: 4px solid color.$error-color;
+  border-radius: 5px;
+  &.tooltip:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent color.$error-color transparent;
+    top: -23px;
+    left: 10px;
+  }
+}
+
+.form-size{
+  max-width: 600px;
+  width: 80%;
+  min-width: 350px;
+  padding: 0 1.5%;
+  margin-top: 80px;
+  margin: auto;
+}
+
+.submit-style{
+  padding: 1.25em;
+  border: transparent;
+  border-radius: border.$b-Radius;
+  color: color.$text-color;
+  background-color: #28d2d0;
+  font-size: 1.15em;
+  font-weight: 700;
+}
+
+
+
